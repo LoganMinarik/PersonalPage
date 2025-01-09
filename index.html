@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- It is ment to look similar to an Apple UI, very very nice btw-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logan Minarik | Personal Website</title>
@@ -93,6 +94,33 @@
             color: #fff;
             font-size: 0.875rem;
         }
+        .social-icons {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            background-color: #333;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-icons a img {
+            width: 15px;
+            height: 15px;
+            filter: invert(1);
+        }
+
+        .social-icons a:hover {
+            background-color: #007aff;
+        }
     </style>
 </head>
 <body>
@@ -142,6 +170,19 @@
                     <img src="Coursera PUFRTQXZ1D33.png" alt="Project Image">
                     <p>Google IT</p>
                     <a class="image/png" img src="Coursera PUFRTQXZ1D33.png" target=""></a>
+                
+                </div>
+                <div class="card">
+                    <img src="" alt="Project Image">
+                    <p>Google IT</p>
+                    <a class="image/png" img src="Coursera PUFRTQXZ1D33.png" target=""></a>
+                
+                </div>
+                <div class="card">
+                    <img src="" alt="Project Image">
+                    <p>Google IT</p>
+                    <a class="image/png" img src="Coursera PUFRTQXZ1D33.png" target=""></a>
+                
                 </div>
                 <!-- Add more cards as needed :3 -->
             </div>
@@ -151,8 +192,10 @@
     <footer>
         2025 Logan Minarik
         <div class="social-icons">
-            
-            
+            <a href="https://www.facebook.com/profile.php?id=61570053415641" target="_blank"><img src="icons/facebook.svg" alt="Facebook"></a>
+            <a href="https://github.com/LoganMinarik" target="_blank"><img src="icons/github.svg" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/logan-minarik-9897492a4/" target="_blank"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
+        </div>
             <!-- Add more icons here -->
     </footer>
 </body>
