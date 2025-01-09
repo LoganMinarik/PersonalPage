@@ -70,6 +70,13 @@
             flex: 1 1 calc(33.333% - 1rem);
             max-width: calc(33.333% - 1rem);
             text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            z-index: 10;
         }
 
         .card img {
@@ -146,7 +153,7 @@
             <div class="section-content">
                 <div class="card">
                     <img src="" alt="Project Image">
-                    <p>Project Description</p>
+                    <p>Created a Customized Arch Linux Installation</p>
                 </div>
                 <!-- Note for self add more cards as needed -->
             </div>
@@ -156,8 +163,10 @@
             <h2>College</h2>
             <div class="section-content">
                 <div class="card">
-                    <img src="path-to-your-image.jpg" alt="College Image">
-                    <p>College Description</p>
+                    <img src="icons/Ivy-tech-hori.webp" alt="College Image">
+                    <p>IVY Tech</p>
+                    <p>Computer Science</p>
+                    <p>2025 - Present</p>
                 </div>
                 <!-- Hehe same as last add more cards as needed -->
             </div>
