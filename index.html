@@ -19,34 +19,27 @@
             line-height: 1.6;
             background-color: #f5f5f7;
             margin: 0;
+            transition: background-color 1.5s, color 1.5s;
         }
 
         body.dark-mode {
             background-color: #121212;
             color: #ffffff;
+            filter: invert(1);
         }
 
-        body.dark-mode header {
-            background-color: #1e1e1e;
-            color: #ffffff;
-        }
-
-        body.dark-mode .card {
+        body.dark-mode header,
+        body.dark-mode .card,
+        body.dark-mode footer,
+        body.dark-mode .social-icons a {
             background-color: #2c2c2c;
             color: #ffffff;
-        }
-
-        body.dark-mode footer {
-            background-color: #1e1e1e;
-            color: #ffffff;
-        }
-
-        body.dark-mode .social-icons a {
-            background-color: #333;
+            filter: invert(1);
         }
 
         body.dark-mode .social-icons a:hover {
             background-color: #007aff;
+            filter: invert(1);
         }
 
         header {
@@ -54,6 +47,7 @@
             padding: 3rem 1rem;
             background-color: #ffffff;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 1.5s, color 1.5s;
         }
 
         header h1 {
@@ -99,7 +93,7 @@
             flex: 1 1 calc(33.333% - 1rem);
             max-width: calc(33.333% - 1rem);
             text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 1.5s, color 1.5s;
             cursor: pointer;
         }
         .card:hover {
@@ -129,6 +123,7 @@
             background-color: #111;
             color: #fff;
             font-size: 0.875rem;
+            transition: background-color 1.5s, color 1.5s;
         }
         .social-icons {
             margin-top: 1rem;
@@ -161,7 +156,7 @@
             background-color: #333;
             border-radius: 50%;
             text-decoration: none;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, background-color 1.5s, color 0.3s;
         }
 
         .social-icons a img {
