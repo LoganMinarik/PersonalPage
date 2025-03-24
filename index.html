@@ -19,6 +19,31 @@
             line-height: 1.6;
             background-color: #f5f5f7;
             margin: 0;
+            transition: background-color 1.5s, color 1.5s;
+        }
+
+        body.dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+            filter: invert(1);
+        }
+
+        body.dark-mode header,
+        body.dark-mode .card,
+        body.dark-mode footer {
+            background-color: #2c2c2c;
+            color: #ffffff;
+            filter: invert(1);
+        }
+
+        body.dark-mode .social-icons a {
+            background-color: #333;
+            filter: none; /* Keep icons the same in both modes */
+        }
+
+        body.dark-mode .social-icons a:hover {
+            background-color: #007aff;
+            filter: none; /* Keep icons the same in both modes */
         }
 
         header {
@@ -26,6 +51,7 @@
             padding: 3rem 1rem;
             background-color: #ffffff;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 1.5s, color 1.5s;
         }
 
         header h1 {
@@ -101,12 +127,29 @@
             background-color: #111;
             color: #fff;
             font-size: 0.875rem;
+            transition: background-color 0.3s, color 0.3s;
         }
         .social-icons {
             margin-top: 1rem;
             display: flex;
             justify-content: center;
             gap: 1rem;
+        }
+        .darkmodeButton {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            background-color: #333;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: background-color-dark 0.3s ease;
+        }
+        .darkmodeButton img {
+            width: 15px;
+            height: 15px;
+            filter: invert(1);
         }
         .social-icons a {
             display: inline-flex;
@@ -117,7 +160,7 @@
             background-color: #333;
             border-radius: 50%;
             text-decoration: none;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, background-color 0.3s, color 0.3s;
         }
 
         .social-icons a img {
@@ -138,7 +181,7 @@
         <h1>Logan Minarik</h1>
         <p>Welcome to my personal website, where I showcase my achievements, projects, and certifications.</p>
         <p>Source Code on GitHub</p>
-    
+        
     </header>
 
     <main class="container">
@@ -309,7 +352,7 @@
             <a href="https://github.com/LoganMinarik" target="_blank"><img src="icons/github.svg" alt="GitHub"></a>
             <a href="https://www.linkedin.com/in/logan-minarik-9897492a4/" target="_blank"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
             <a href="https://loganminarik.github.io/DungeonJS/" target="_blank"><img src="icons/javascript.svg" alt="Game"></a>
-               
+            <a herf="dark-mode-toggle" id="dark-mode-toggle" target="_blank"><img src ="icons/apifox.svg"></a>  
         </div>
             <!-- Add more icons here -->
     </footer>
