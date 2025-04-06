@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logan Minarik | Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         * {
             margin: 0;
@@ -27,9 +28,10 @@
             color: #ffffff;
             filter: invert(1);
         }
-
+       
         body.dark-mode header,
         body.dark-mode .card,
+        body.dark-mode .yapping-box,
         body.dark-mode footer {
             background-color: #2c2c2c;
             color: #ffffff;
@@ -172,6 +174,17 @@
         .social-icons a:hover {
             background-color: #007aff;
         }
+        .yapping-box {
+    background-color: #ffffff;
+    color: #333;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 1.5s, color 1.5s;
+}
+
+
     </style>
 </head>
 <body>
@@ -202,12 +215,13 @@
         
         <section>
             <h2>Achievements</h2>
-            <div class="section-content">
-                <!--div class="card">
-                    <img src="path-to-your-image.jpg" alt="Achievement Image">
-                    <p>Achievement Description</p>
-                </div>
-                <!-- Note for self add more cards as needed -->
+            <div class="yapping-box">
+                <p>
+                    - Completed the Early College Program at Vincennes University<br>
+                    - Member of the Fedora Project<br>
+                    - Built a custom worksatation<br>
+                    - Developed a personal website to showcase my projects and skills<br>
+                </p>
             </div>
         </section>
 
@@ -228,17 +242,45 @@
                     <img src="icons/Fedora_icon_(2021).png" alt="Project Image">
                     <p>Fedora Project Member</p>
                 </div>
-                <div class="card">
-                    <img src="icons/JavaScript.png" alt="Project Image">
-                    <p>JavaScript</p>
-                    <p>2025 - Present</p>
-                </div>
-                <div class="card">
-                    <img src="icons/Java.png" alt="Project Image">
-                    <p>Java</p>
-                    <p>2025 - Present</p>
+                
             </div>
             
+        </section>
+
+        <section>
+            <h2>Languages</h2>
+            <div class="section-content">
+            
+
+            <div class="card">
+                <img src="icons/JavaScript.png" alt="Project Image">
+                <p>JavaScript</p>
+                <p>2025 - Present</p>
+            </div>
+            <div class="card">
+                <img src="icons/Java.png" alt="Project Image">
+                <p>Java</p>
+                <p>2025 - Present</p>
+            </div>
+            <div class="card">
+                <img src="icons/Kotlin.png" alt="Project Image">
+                <p>Kotlin</p>
+                <p>2025 - Present</p>
+            </div>
+            <div class="card">
+                <img src="icons/Pyhton.png" alt="Project Image">
+                <p>Python</p>
+                <p>2023 - Present</p>
+            </div>
+            <div class="card">
+                <img src="icons/Lua.png" alt="Project Image">
+                <p>Lua</p>
+                <p>2025 - Present</p>
+            </div>
+            <div class="card">
+                <img src="icons/HTML5.png" alt="Project Image">
+                <p>HTML5</p>
+                <p>2020 - Present</p>
         </section>
 
         <section>
@@ -374,7 +416,12 @@
         </section>
         <section>
             <h2>Skills</h2>
-            <p></p>
+            <div class="yapping-box">
+                <p>
+                    - Programming Languages: Lua, Python, JavaScript, HTML, CSS<br>
+                    - Soft Skills: Communication, Problem-Solving, Teamwork, Professionalism<br>
+                </p>
+            </div>
         </section>
     </main>
 
