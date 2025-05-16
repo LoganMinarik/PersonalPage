@@ -6,191 +6,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logan Minarik | Personal Website</title>
-
+    <link rel="stylesheet" href="code/css/style.css">
     
-    <style>
+    
+<style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            color: #333;
-            line-height: 1.6;
-            background-color: #f5f5f7;
-            margin: 0;
-            transition: background-color 1.5s, color 1.5s;
-        }
+        
 
-        body.dark-mode {
-            background-color: #121212;
-            color: #ffffff;
-            filter: invert(1);
-        }
-       
-        body.dark-mode header,
-        body.dark-mode .card,
-        body.dark-mode .yapping-box,
-        body.dark-mode footer {
-            background-color: #2c2c2c;
-            color: #ffffff;
-            filter: invert(1);
-        }
-
-        body.dark-mode .social-icons a {
-            background-color: #333;
-            filter: none; /* Keep icons the same in both modes */
-        }
-
-        body.dark-mode .social-icons a:hover {
-            background-color: #007aff;
-            filter: none; /* Keep icons the same in both modes */
-        }
-
-        header {
-            text-align: center;
-            padding: 3rem 1rem;
-            background-color: #ffffff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            transition: background-color 1.5s, color 1.5s;
-        }
-
-        header h1 {
-            font-size: 3rem;
-            color: #000;
-            margin-bottom: 0.5rem;
-        }
-
-        header p {
-            font-size: 1.25rem;
-            color: #666;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        section {
-            margin-bottom: 3rem;
-        }
-
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            color: #111;
-            text-align: center;
-        }
-
-        .section-content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 1rem;
-        }
-
-        .card {
-            background-color: #fff;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            flex: 1 1 calc(33.333% - 1rem);
-            max-width: calc(33.333% - 1rem);
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
-        }
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-            z-index: 10;
-        }
-
-        .card img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-        }
-
-        .pdf-upload {
-            margin-top: 1rem;
-            display: block;
-            font-size: 0.875rem;
-            color: #007aff;
-            text-decoration: none;
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem 1rem;
-            background-color: #111;
-            color: #fff;
-            font-size: 0.875rem;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .social-icons {
-            margin-top: 1rem;
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-        }
-        .darkmodeButton {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 30px;
-            height: 30px;
-            background-color: #333;
-            border-radius: 50%;
-            text-decoration: none;
-            transition: background-color-dark 0.3s ease;
-        }
-        .darkmodeButton img {
-            width: 15px;
-            height: 15px;
-            filter: invert(1);
-        }
-        .social-icons a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 30px;
-            height: 30px;
-            background-color: #333;
-            border-radius: 50%;
-            text-decoration: none;
-            transition: background-color 0.3s ease, background-color 0.3s, color 0.3s;
-        }
-
-        .social-icons a img {
-            width: 15px;
-            height: 15px;
-            filter: invert(1);
-        }
-
-        .social-icons a:hover {
-            background-color: #007aff;
-        }
-        .yapping-box {
-    background-color: #ffffff;
-    color: #333;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: background-color 1.5s, color 1.5s;
-}
-
-
+        
     </style>
 </head>
 <body>
-     <script src="backend.js"></script>
-     <script src="games/Untitled-3.pyowo"></script>
+     <script src="code/js/backend.js"></script>
     <header>
         <h1>Logan Minarik</h1>
         <p>Welcome to my personal website, where I showcase my achievements, projects, and certifications.</p>
@@ -202,13 +34,13 @@
         <section>
             <div class="section-content">
                 <div class="card">
-                    <img src="pictures/HeadShots/ivy-02-11-25-9125.jpg" alt="Profile Picture">
+                    <img src="assets/pictures/HeadShots/ivy-02-11-25-9125.jpg" alt="Profile Picture">
                 </div>
                 <div class="card">
-                    <img src="pictures/HeadShots/ivy-02-11-25-9126.jpg" alt="Profile Picture">
+                    <img src="assets/pictures/HeadShots/ivy-02-11-25-9126.jpg" alt="Profile Picture">
                 </div>
                 <div class="card">
-                    <img src="pictures/HeadShots/ivy-02-11-25-9124.jpg" alt="Profile Picture">
+                    <img src="assets/pictures/HeadShots/ivy-02-11-25-9124.jpg" alt="Profile Picture">
                 </div>
 
             </div>
@@ -237,32 +69,32 @@
             <h2>Projects</h2>
             <div class="section-content">
                 <div class="card">
-                    <img src="icons/archlinux.png" alt="Project Image">
+                    <img src="assets/icons/archlinux.png" alt="Project Image">
                     <p>Created a Customized Arch Linux Installation</p>
                 </div>
                 <!-- Note for self add more cards as needed -->
                 <div class="card">
-                    <img href="https://www.linkedin.com/in/logan-minarik-9897492a4/" src="icons/C★_Logo.png" alt="Project Image">
+                    <img href="https://www.linkedin.com/in/logan-minarik-9897492a4/" src="assets/icons/C★_Logo.png" alt="Project Image">
                     <p>Computer Language Development</p>
                 </div>
 
                 <div class="card">
-                    <img src="icons/Fedora_icon_(2021).png" alt="Project Image">
+                    <img src="assets/icons/Fedora_icon_(2021).png" alt="Project Image">
                     <p>Fedora Project Member</p>
                 </div>
                 <div class="card">
-                    <img src="icons/Android.png" alt="Project Image">
+                    <img src="assets/icons/Android.png" alt="Project Image">
                     <p>Built and Released</p>
                     <p>Android APKs</p>
                 </div> 
                 <div class="card">
-                    <img src="icons/AndroidStudio.png" alt="Project Image">
+                    <img src="assets/icons/AndroidStudio.png" alt="Project Image">
                     <p>Licenced Android Devoloper</p>
                     <p>By Google</p>
                     
                 </div>
                 <div class="card">
-                    <img src="icons/Ubuntu.png" alt="Project Image">
+                    <img src="assets/icons/Ubuntu.png" alt="Project Image">
                     <p>Built and Deployed a Ubuntu home server with control with SSH</p>
                 </div>
             </div>
@@ -275,34 +107,34 @@
             
 
             <div class="card">
-                <img src="icons/JavaScript.png" alt="Project Image">
+                <img src="assets/icons/JavaScript.png" alt="Project Image">
                 <p>JavaScript</p>
                 <p>1 Year</p>
                 <!-- started back in 2021-->
                 <!-- the time is referenced from 2025, starting with Kotlin making it year 1-->
             </div>
             <div class="card">
-                <img src="icons/Java.png" alt="Project Image">
+                <img src="assets/icons/Java.png" alt="Project Image">
                 <p>Java</p>
                 <p>1 Year</p>
             </div>
             <div class="card">
-                <img src="icons/Kotlin.png" alt="Project Image">
+                <img src="assets/icons/Kotlin.png" alt="Project Image">
                 <p>Kotlin</p>
                 <p>1 Year</p>
             </div>
             <div class="card">
-                <img src="icons/Python.png" alt="Project Image">
+                <img src="assets/icons/Python.png" alt="Project Image">
                 <p>Python</p>
                 <p>2 Years</p>
             </div>
             <div class="card">
-                <img src="icons/Lua.png" alt="Project Image">
+                <img src="assets/icons/Lua.png" alt="Project Image">
                 <p>Lua</p>
                 <p>1 Year</p>
             </div>
             <div class="card">
-                <img src="icons/HTML5.png" alt="Project Image">
+                <img src="assets/icons/HTML5.png" alt="Project Image">
                 <p>HTML5</p>
                 <p>1 Year</p>
         </section>
@@ -311,19 +143,19 @@
             <h2>College</h2>
             <div class="section-content">
                 <div class="card">
-                    <img src="icons/Ivy-tech-hori.webp" alt="College Image">
+                    <img src="assets/icons/Ivy-tech-hori.webp" alt="College Image">
                     <p>IVY Tech</p>
                     <p>Computer Science</p>
                     <p>2025 - Present</p>
                 </div>
                 <div class="card">
-                    <img src="icons/Screen-Shot-2023-02-27-at-6.23.55-PM.png" alt="College Image">
+                    <img src="assets/icons/Screen-Shot-2023-02-27-at-6.23.55-PM.png" alt="College Image">
                     <p>Vincennes University</p>
                     <p>Early College Program</p>
                     <p>Class of 2022</p>
                 </div>
                 <div class="card">
-                    <img src="icons/Purdue.png" alt="College Image">
+                    <img src="assets/icons/Purdue.png" alt="College Image">
                     <p>Purdue University</p>
                     <p></p>
                     <p>2023-2024</p>
@@ -336,107 +168,108 @@
             <h2>Project Certificates</h2>
             <div class="section-content">
                 <div class="card">
-                    <img src="pdfs→png/MasterCardCybersecurityJobSim.png" alt="Project Image">
+                    <img src="assets/pdfs→png/MasterCardCybersecurityJobSim.png" alt="Project Image">
                     <p>Mastercard</p>
                     <p>Cybersecurity</p>
                 </div>
 
                 <div class="card">
-                    <img src="pdfs→png/Forage Goldman Sachs.png" alt="Project Image">
+                    <img src="assets/pdfs→png/Forage Goldman Sachs.png" alt="Project Image">
                     <p>Goldman Sachs</p>
                     <p>Investment Banking</p>
                 </div>
                 <div class="card">
-                    <img src="pdfs→webp/Forage Discover.webp" alt="Project Image">
+                    <img src="assets/pdfs→webp/Forage Discover.webp" alt="Project Image">
                     <p>Discover</p>
                     <p>Workplace Communication</p>
                 </div>
                 <div class="card">
-                    <img src="pdfs→png/Forage AWS.png" alt="Project Image">
+                    <img src="assets/pdfs→png/Forage AWS.png" alt="Project Image">
                     <p>AWS</p>
                     <p></p>
                 </div>
                 <div class="card">
-                    <img src="pdfs→png/Forage EA.png" alt="Project Image">
+                    <img src="assets/pdfs→png/Forage EA.png" alt="Project Image">
                     <p>Electronic Arts</p>
                     <p>Software Engineering</p>
                 </div>
                 <div class="card">
-                    <img src ="pdfs→png/Forage Verizon.png" alt="Project Image">
+                    <img src ="assets/pdfs→png/Forage Verizon.png" alt="Project Image">
                     <p>Verizon</p>
                     <p>VPN, Data Security, Cloud Security</p>
                 </div>
             </div>
         </section>
+        
 
         <section>
             <h2>Certifications</h2>
             <div class="section-content">
                 <div class="card">
-                    <img src="pdfs→png/Coursera PUFRTQXZ1D33.png" alt="Project Image">
+                    <img src="assets/pdfs→png/Coursera PUFRTQXZ1D33.png" alt="Project Image">
                     <p>Google IT</p>
                     <a class="image/png" img src="Coursera PUFRTQXZ1D33.png" target=""></a>
                 
                 </div>
                 <div class="card">
-                    <img src="pdfs→png/Coursera QU2RZQ6LECKN.png" alt="Project Image">
+                    <img src="assets/pdfs→png/Coursera QU2RZQ6LECKN.png" alt="Project Image">
                     <p>Microsoft Excel</p>
                     <a class="image/png" img src="Coursera PUFRTQXZ1D33.png" target=""></a>
                 
                 </div>
                 <div class="card">
-                    <img src="pdfs→png/Coursera MNA174D6X4WS.png" alt="Project Image">
+                    <img src="assets/pdfs→png/Coursera MNA174D6X4WS.png" alt="Project Image">
                     <p>Computer Networking</p>
                     <a class="image/png" img src="Coursera PUFRTQXZ1D33.png" target=""></a>
                 
                 </div>
                 <div class="card">
-                    <img src="pdfs→png/Coursera CXPRWHR3WL9A.png" alt="Project Image">
+                    <img src="assets/pdfs→png/Coursera CXPRWHR3WL9A.png" alt="Project Image">
                     <p>IT Support</p>
                     <a class="image/png" img src="Coursera PUFRTQXZ1D33.png" target=""></a>
                 
                 </div>
                 <div class="card">
-                    <img src="pdfs→png/Coursera 94V8VNJX19B1.png" alt="Project Image">
+                    <img src="assets/pdfs→png/Coursera 94V8VNJX19B1.png" alt="Project Image">
                     <p>OS Management</p>
                     <a class="image/png" img src="Coursera PUFRTQXZ1D33.png" target=""></a>
                 
                 </div>
                 <div class="card">
-                    <img src="pdfs→png/Coursera 546ZPAUUYU81.png" alt="Project Image">
+                    <img src="assets/pdfs→png/Coursera 546ZPAUUYU81.png" alt="Project Image">
                     <p>Cyber Security</p>
                     <a class="image/png" img src="Coursera PUFRTQXZ1D33.png" target=""></a>
                 
                 </div>
                 <div class="card">
-                    <img src="pdfs→png/Coursera 5KLNTY03QY4K.png" alt="Project Image">
+                    <img src="assets/pdfs→png/Coursera 5KLNTY03QY4K.png" alt="Project Image">
                     <p>System Administration</p>
                     <a class="image/png" img src="Coursera PUFRTQXZ1D33.png" target=""></a>
                 
                 </div>
                 <div class="card">
-                    <img src="pdfs→png/Coursera XZC8IDRKYGXJ.png" alt="Project Image">
+                    <img src="assets/pdfs→png/Coursera XZC8IDRKYGXJ.png" alt="Project Image">
                     <p>Business Analysis & Process Managment</p>
                     <a class="image/png" img src="Coursera PUFRTQXZ1D33.png" target=""></a>
                 </div>
                 <div class="card">
-                    <img src="pdfs→png/Coursera ICW7L930RF3S.png" alt="Project Image">
+                    <img src="assets/pdfs→png/Coursera ICW7L930RF3S.png" alt="Project Image">
                     <p>Generative AI & LLMs Basics</p>
                     <a class="image/png" img src="Coursera PUFRTQXZ1D33.png" target=""></a>
                 </div>
                 
                 <div class="card">
-                    <img src="pdfs→png/Coursera 11S6BIBYLSTS.png" alt="Project Image">
+                    <img src="assets/pdfs→png/Coursera 11S6BIBYLSTS.png" alt="Project Image">
                     <p>Microsoft Azure</p>
                     <a class="image/png" img src="Coursera PUFRTQXZ1D33.png" target=""></a>
                 </div>
                 <div class="card">
-                    <img src="pdfs→png/Coursera C7GI3Y2YQK3H.png" alt="Project Image">
+                    <img src="assets/pdfs→png/Coursera C7GI3Y2YQK3H.png" alt="Project Image">
                     <p>Bash Scripting</p>
                     <a class="image/png" img src="Coursera PUFRTQXZ1D33.png" target=""></a>
                 </div>
                 <div class="card">
-                    <img src="pdfs→png/Coursera HPVAYCN3CGEE.png" alt="Project Image">
+                    <img src="assets/pdfs→png/Coursera HPVAYCN3CGEE.png" alt="Project Image">
                     <p>Investment Risk Managment</p>
                     <a class="image/png" img src="Coursera PUFRTQXZ1D33.png" target=""></a>
                 </div>
@@ -460,10 +293,13 @@
     <footer>
         2025 Logan Minarik
         <div class="social-icons">
-            <a href="https://github.com/LoganMinarik" target="_blank"><img src="icons/github.svg" alt="GitHub"></a>
-            <a href="https://www.linkedin.com/in/logan-minarik-9897492a4/" target="_blank"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
-            <a href="https://loganminarik.github.io/DungeonJS/" target="_blank"><img src="icons/javascript.svg" alt="Game"></a>
-            <a herf="dark-mode-toggle" id="dark-mode-toggle" target="_blank"><img src ="icons/darkmode.png"></a>  
+            <a class="socialLinkGithub" href="https://github.com/LoganMinarik" target="_blank"><img src="icons/boxicons.iconjar/boxicons.iconjar/icons/bxl-github.svg" alt="GitHub"></a>
+            <a class="socialLinkLinkedin" href="https://www.linkedin.com/in/LoganMinarik/" target="_blank"><img src="icons/boxicons.iconjar/boxicons.iconjar/icons/bxl-linkedin.svg" alt="LinkedIn"></a>
+            <a class="socialLinkJavascript" href="https://loganminarik.github.io/PartyPak/" target="_blank"><img src="icons/boxicons.iconjar/boxicons.iconjar/icons/bxl-javascript.svg" alt="Game"></a>
+            <a class="socialLinkLightBulb" herf="dark-mode-toggle" id="dark-mode-toggle" target="_blank"><img src ="icons/boxicons.iconjar/boxicons.iconjar/icons/bx-bulb.svg"></a> 
+            <a class="socialLinkFacebook" href="https://www.facebook.com/loganminarik" target="_blank"><img src="icons/boxicons.iconjar/boxicons.iconjar/icons/bxl-facebook.svg" alt="Facebook"></a> 
+            <!---a class="socialLinkBlueSky" href="https://bsky.app/profile/lminarik.bsky.social" target="_blank"><img src="node_modules/boxicons/iconjar/boxicons.iconjar/boxicons.iconjar/icons/bx-bxs-cloud.svg" alt="BlueSky"--->
+
         </div>
             <!-- Add more icons here -->
     </footer>
