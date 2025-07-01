@@ -1,2 +1,2 @@
 # PersonalPage
- my personal website page
+ my personal portfolio website page
