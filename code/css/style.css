@@ -57,6 +57,11 @@ header h1 {
     margin-bottom: 0.5rem;
 }
 
+header.dark-mode h1 {
+    font-size: 3rem;
+    color: #cfcfcf;
+    margin-bottom: 0.5rem;
+}
 
 
 .header.body.dark-mode h1 {
@@ -375,3 +380,5 @@ text-align: center;
 transition: background-color 1.5s, color 1.5s;
 }
 
+/* Navigation */
+nav {padding: 50px 15px 20px 15px; background-color: rgb(216, 216, 216);}

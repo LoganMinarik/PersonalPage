@@ -7,3 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.classList.toggle('dark-mode');
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.getElementById('yippy-toggle');
+    toggleButton.addEventListener('click', () => {
+        playSound('assets/sounds/assets/sounds/MF - (3).wav');
+    
+    });
+});
