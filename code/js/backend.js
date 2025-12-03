@@ -15,3 +15,20 @@ document.addEventListener('DOMContentLoaded', () => {
     
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const showMoreButtons = document.querySelectorAll('.show-more');
+
+    showMoreButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const section = button.previousElementSibling;
+            const hiddenCards = section.querySelectorAll('.card-hidden');
+
+            hiddenCards.forEach(card => {
+                card.style.display = 'contents';
+            });
+
+            button.style.display = 'none';
+        });
+    });
+});
