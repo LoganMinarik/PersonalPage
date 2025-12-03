@@ -15,3 +15,36 @@ document.addEventListener('DOMContentLoaded', () => {
     
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const showMoreButtons = document.querySelectorAll('.show-more');
+    const showLessButtons = document.querySelectorAll('.show-less');
+
+    showMoreButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const section = button.parentElement;
+            const hiddenCards = section.querySelectorAll('.card-hidden');
+
+            hiddenCards.forEach(card => {
+                card.style.display = 'contents';
+            });
+
+            button.style.display = 'none';
+            section.querySelector('.show-less').style.display = 'block';
+        });
+    });
+
+    showLessButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const section = button.parentElement;
+            const hiddenCards = section.querySelectorAll('.card-hidden');
+
+            hiddenCards.forEach(card => {
+                card.style.display = 'none';
+            });
+
+            button.style.display = 'none';
+            section.querySelector('.show-more').style.display = 'block';
+        });
+    });
+});
